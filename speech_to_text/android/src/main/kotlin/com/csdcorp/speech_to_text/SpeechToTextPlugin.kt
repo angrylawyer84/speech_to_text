@@ -819,7 +819,7 @@ public class SpeechToTextPlugin :
         }
     }
 
-    private fun Log.e(logTag,  msg: String ) {
+    private fun debugLog( msg: String ) {
         if ( debugLogging ) {
             Log.d( logTag, msg )
         }
@@ -906,7 +906,7 @@ class LanguageDetailsChecker(flutterResult: Result, logging: Boolean ) : Broadca
         return "${locale.language}_${locale.country}:$name"
     }
 
-    private fun Log.e(logTag,  msg: String ) {
+    private fun debugLog( msg: String ) {
         if ( debugLogging ) {
             Log.d( logTag, msg )
         }
