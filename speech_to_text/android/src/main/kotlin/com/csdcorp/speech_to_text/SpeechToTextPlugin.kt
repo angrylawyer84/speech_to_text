@@ -293,7 +293,7 @@ public class SpeechToTextPlugin :
                     recognizerIntent?.putExtra("android.speech.extra.GET_AUDIO", true)
                     recognizerIntent?.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NO_HISTORY)
                     currentActivity?.startActivityForResult(recognizerIntent, resultRequestCode)
-                } else {
+                //} else {
                     speechRecognizer?.startListening(recognizerIntent)
                 }
             }
